@@ -1,0 +1,33 @@
+.countercontainer {
+    text-align: center;
+    margin: 50px;
+    padding: 50px;
+    border: 2px solid #090909;
+    border-radius: 8px;
+    background-color: hsl(0, 5%, 70%);
+  }
+
+  .incrementbutton{
+    font-size: 16px;
+      padding: 10px 20px;
+      margin: 5px;
+      background-color: hsl(0, 0%, 97%);
+      cursor: pointer;
+    }  
+
+  .decrementbutton {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: hsl(0, 95%, 50%);
+    cursor: pointer;
+
+  }
+
+  .counterdisplay {
+    margin: 10px;
+    padding: 5px, 10px;
+    border: 2px solid #090909;
+    background-color: hsl(38, 28%, 92%);
+    font-size: 24px;
+  }

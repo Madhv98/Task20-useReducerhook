@@ -1,4 +1,6 @@
 import {useReducer} from 'react'
+import styles from './counter.module.css'
+
 
 function Counter(){
     const counterReducer = (state, action) => {
@@ -17,17 +19,18 @@ function Counter(){
      const initialState = { count: 0 }
     const [state, dispatch] = useReducer(counterReducer,initialState)
 
-    return(
-        <div>
-       <button onClick={() => dispatch({type:'INCREMENT'})}>Increment</button>
-       <button onClick={() => dispatch({type:'DECREMENT'})}>Decrement</button>
-       {state.count} 
-
-    </div>
-
-    )
-  
-}
+    return (
+      <div className={styles.countercontainer}>
+        <button className={styles.incrementbutton} onClick={() => dispatch({ type: 'INCREMENT' })}>
+          Increment
+        </button>
+        <button className={styles.decrementbutton} onClick={() => dispatch({ type: 'DECREMENT' })}>
+          Decrement
+        </button>
+        <div className={styles.counterdisplay}>{state.count}</div>
+      </div>
+    );
+  }
 export default Counter
 
 
